@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inkbound Publishing — Where extraordinary stories find their forever readers. Full-service book publishing, editing, design, and global distribution." />
+  <title>Inkbound Publishing | Where Stories Become Legacies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ CURSOR ═══ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ═══ LOADER ═══ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">INKBOUND</div>
+      <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+      <div class="loader-text" id="loaderText">Turning pages...</div>
+    </div>
+  </div>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      <span class="logo-mark">✦</span>
+      <span class="logo-text">INKBOUND</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#testimonials" class="nav-link">Authors</a>
+      <a href="#contact" class="nav-cta">Start Your Journey</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <div class="mobile-nav-links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Authors</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <p>+1 (800) 465-2683</p>
+      <p>hello@inkboundpublishing.com</p>
+    </div>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-noise"></div>
+    </div>
+
+    <!-- Floating books -->
+    <div class="floating-books" aria-hidden="true">
+      <div class="book b1"><div class="book-spine"></div></div>
+      <div class="book b2"><div class="book-spine"></div></div>
+      <div class="book b3"><div class="book-spine"></div></div>
+      <div class="book b4"><div class="book-spine"></div></div>
+      <div class="book b5"><div class="book-spine"></div></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-dot"></span>
+        Premier Book Publishing Agency — Est. 2012
+      </div>
+      <h1 class="hero-headline reveal-up delay-1">
+        <span class="line-1">Where Stories</span>
+        <span class="line-2 italic-gold">Become</span>
+        <span class="line-3">Legacies</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        From manuscript to masterpiece — we handle every chapter of your publishing journey. Editorial excellence, stunning design, and global reach for authors who refuse to be ordinary.
+      </p>
+      <div class="hero-actions reveal-up delay-3">
+        <a href="#contact" class="btn-primary">
+          <span>Publish My Book</span>
+          <div class="btn-shine"></div>
+        </a>
+        <a href="#services" class="btn-ghost">
+          <span>Explore Services</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up delay-4">
+        <div class="stat">
+          <span class="stat-num" data-target="1200">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Books Published</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Author Satisfaction</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="40">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Countries Reached</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE STRIP ═══ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Manuscript Editing</span><span class="sep">✦</span>
+      <span>Cover Design</span><span class="sep">✦</span>
+      <span>Global Distribution</span><span class="sep">✦</span>
+      <span>Amazon Optimization</span><span class="sep">✦</span>
+      <span>Audiobook Production</span><span class="sep">✦</span>
+      <span>PR & Marketing</span><span class="sep">✦</span>
+      <span>eBook Formatting</span><span class="sep">✦</span>
+      <span>Copyright Registration</span><span class="sep">✦</span>
+      <span>Manuscript Editing</span><span class="sep">✦</span>
+      <span>Cover Design</span><span class="sep">✦</span>
+      <span>Global Distribution</span><span class="sep">✦</span>
+      <span>Amazon Optimization</span><span class="sep">✦</span>
+      <span>Audiobook Production</span><span class="sep">✦</span>
+      <span>PR & Marketing</span><span class="sep">✦</span>
+      <span>eBook Formatting</span><span class="sep">✦</span>
+      <span>Copyright Registration</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT BAND ═══ -->
+  <section class="about-band" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-frame">
+            <div class="frame-inner">
+              <div class="book-stack-3d">
+                <div class="bs-book bs-b1"></div>
+                <div class="bs-book bs-b2"></div>
+                <div class="bs-book bs-b3"></div>
+                <div class="bs-book bs-b4"></div>
+                <div class="bs-glow"></div>
+              </div>
+            </div>
+            <div class="frame-badge">
+              <svg viewBox="0 0 100 100" class="badge-ring">
+                <path id="badgeCircle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+                <text>
+                  <textPath href="#badgeCircle">Award-Winning Agency · Since 2012 · </textPath>
+                </text>
+              </svg>
+              <span class="badge-star">✦</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-eyebrow">About Inkbound</div>
+          <h2 class="section-title">We Don't Just Publish Books.<br/><em>We Build Empires.</em></h2>
+          <p class="about-body">Inkbound Publishing is the agency authors trust when the stakes are high. We combine old-world editorial mastery with cutting-edge marketing technology to launch books that dominate bestseller charts, open speaking stages, and build lasting author brands.</p>
+          <p class="about-body">Our team of award-winning editors, designers, and strategists has helped over 1,200 authors — from first-time writers to CEOs — transform their manuscripts into powerful published works distributed in 40+ countries.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <span class="pillar-icon">◈</span>
+              <div>
+                <strong>Boutique Attention</strong>
+                <p>Your book gets a dedicated team, not a ticket number.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">◈</span>
+              <div>
+                <strong>End-to-End Service</strong>
+                <p>Editing through distribution — one roof, zero gaps.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">◈</span>
+              <div>
+                <strong>Bestseller Strategy</strong>
+                <p>Data-driven launch plans built to hit the charts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section class="services" id="services">
+    <div class="services-bg">
+      <div class="services-orb"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">What We Do</div>
+        <h2 class="section-title">Full-Spectrum Publishing<br/><em>Services</em></h2>
+        <p class="section-sub">Every tool you need to go from idea to international bestseller.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card sc-featured" data-service="1">
+          <div class="sc-glow"></div>
+          <div class="sc-number">01</div>
+          <div class="sc-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 6h24l8 8v28a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="currentColor" stroke-width="1.5"/><path d="M32 6v8h8M16 22h16M16 28h16M16 34h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Manuscript Editing</h3>
+          <p>Line editing, developmental editing, and proofreading by seasoned editors who've shaped bestsellers.</p>
+          <a href="#contact" class="sc-link">Get Started →</a>
+        </div>
+
+        <div class="service-card" data-service="2">
+          <div class="sc-glow"></div>
+          <div class="sc-number">02</div>
+          <div class="sc-icon">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 18l6 6-6 6M22 30h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Book Cover Design</h3>
+          <p>Award-winning covers that stop the scroll on Amazon and turn browsers into buyers.</p>
+          <a href="#contact" class="sc-link">Get Started →</a>
+        </div>
+
+        <div class="service-card" data-service="3">
+          <div class="sc-glow"></div>
+          <div class="sc-number">03</div>
+          <div class="sc-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M24 6C24 6 30 14 30 24s-6 18-6 18M24 6C24 6 18 14 18 24s6 18 6 18M6 24h36" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Global Distribution</h3>
+          <p>Your book in 40+ countries via Amazon, Barnes & Noble, IngramSpark, and 100+ retailers worldwide.</p>
+          <a href="#contact" class="sc-link">Get Started →</a>
+        </div>
+
+        <div class="service-card" data-service="4">
+          <div class="sc-glow"></div>
+          <div class="sc-number">04</div>
+          <div class="sc-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 8L6 18v12l18 10 18-10V18L24 8z" stroke="currentColor" stroke-width="1.5"/><path d="M6 18l18 10M42 18L24 28M24 28v12" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Author Branding</h3>
+          <p>Website, social presence, speaker kit — everything you need to own your niche as an authority.</p>
+          <a href="#contact" class="sc-link">Get Started →</a>
+        </div>
+
+        <div class="service-card" data-service="5">
+          <div class="sc-glow"></div>
+          <div class="sc-number">05</div>
+          <div class="sc-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M12 8v32M36 8v32M12 24h24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="8" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="40" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="36" cy="40" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Audiobook Production</h3>
+          <p>Studio-quality narration, ACX distribution, and Audible-ready masters — your words, heard everywhere.</p>
+          <a href="#contact" class="sc-link">Get Started →</a>
+        </div>
+
+        <div class="service-card" data-service="6">
+          <div class="sc-glow"></div>
+          <div class="sc-number">06</div>
+          <div class="sc-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 36L20 16l8 12 6-8 6 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>PR & Book Marketing</h3>
+          <p>Launch campaigns, media pitching, BookTok strategy, Amazon ads, and bestseller list targeting.</p>
+          <a href="#contact" class="sc-link">Get Started →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESS ═══ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">How It Works</div>
+        <h2 class="section-title">Your Journey From<br/><em>Page to Published</em></h2>
+      </div>
+
+      <div class="process-timeline">
+        <div class="timeline-line"></div>
+
+        <div class="process-step ps-left">
+          <div class="ps-num">01</div>
+          <div class="ps-content">
+            <h3>Discovery Call</h3>
+            <p>We learn your story, your goals, and your audience. A dedicated publishing consultant maps your complete path to publication in a free 30-minute strategy session.</p>
+          </div>
+          <div class="ps-dot"></div>
+        </div>
+
+        <div class="process-step ps-right">
+          <div class="ps-dot"></div>
+          <div class="ps-content">
+            <h3>Editorial Development</h3>
+            <p>Our editors refine your manuscript with line edits, structural notes, and fact-checks. You collaborate directly — every suggestion is yours to accept or decline.</p>
+          </div>
+          <div class="ps-num">02</div>
+        </div>
+
+        <div class="process-step ps-left">
+          <div class="ps-num">03</div>
+          <div class="ps-content">
+            <h3>Design & Formatting</h3>
+            <p>Interior layout, cover design, and eBook formatting — all crafted to look like a Big Five publication, down to the last serif.</p>
+          </div>
+          <div class="ps-dot"></div>
+        </div>
+
+        <div class="process-step ps-right">
+          <div class="ps-dot"></div>
+          <div class="ps-content">
+            <h3>Launch & Distribute</h3>
+            <p>We submit to every major platform simultaneously — print, digital, audio. Your launch day comes with a full PR and ads strategy already in motion.</p>
+          </div>
+          <div class="ps-num">04</div>
+        </div>
+
+        <div class="process-step ps-left ps-last">
+          <div class="ps-num">05</div>
+          <div class="ps-content">
+            <h3>Grow Your Legacy</h3>
+            <p>Ongoing marketing support, speaking engagement outreach, sequel planning, and brand growth — because your book is the beginning, not the end.</p>
+          </div>
+          <div class="ps-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PORTFOLIO / GENRES ═══ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Published Works</div>
+        <h2 class="section-title">Stories We've Helped<br/><em>Tell the World</em></h2>
+        <p class="section-sub">From business books to memoirs, thrillers to children's lit — we publish it all with equal devotion.</p>
+      </div>
+
+      <div class="genre-grid">
+        <div class="genre-card" style="--clr: #C9A96E">
+          <div class="gc-bg" style="background: linear-gradient(135deg, #1a0e00 0%, #2d1a00 100%)"></div>
+          <span class="gc-icon">📚</span>
+          <h4>Business & Leadership</h4>
+          <p>120+ titles</p>
+        </div>
+        <div class="genre-card" style="--clr: #A8D8C8">
+          <div class="gc-bg" style="background: linear-gradient(135deg, #001a14 0%, #002d22 100%)"></div>
+          <span class="gc-icon">🧠</span>
+          <h4>Self-Help & Wellness</h4>
+          <p>200+ titles</p>
+        </div>
+        <div class="genre-card gc-wide" style="--clr: #E8C4D4">
+          <div class="gc-bg" style="background: linear-gradient(135deg, #1a0010 0%, #2d0018 100%)"></div>
+          <span class="gc-icon">✍️</span>
+          <h4>Memoir & Biography</h4>
+          <p>Our most celebrated genre. Real lives told with literary grace.</p>
+          <p class="gc-count">350+ titles</p>
+        </div>
+        <div class="genre-card" style="--clr: #B8C8E8">
+          <div class="gc-bg" style="background: linear-gradient(135deg, #00100d, #001a19 100%)"></div>
+          <span class="gc-icon">🔮</span>
+          <h4>Fiction & Thriller</h4>
+          <p>280+ titles</p>
+        </div>
+        <div class="genre-card" style="--clr: #F0D890">
+          <div class="gc-bg" style="background: linear-gradient(135deg, #1a1400 0%, #2d2200 100%)"></div>
+          <span class="gc-icon">🌙</span>
+          <h4>Spiritual & Faith</h4>
+          <p>180+ titles</p>
+        </div>
+        <div class="genre-card" style="--clr: #D4A8E8">
+          <div class="gc-bg" style="background: linear-gradient(135deg, #0d001a 0%, #18002d 100%)"></div>
+          <span class="gc-icon">🎓</span>
+          <h4>Academic & Education</h4>
+          <p>90+ titles</p>
+        </div>
+      </div>
+
+      <!-- fake book covers showcase -->
+      <div class="books-showcase">
+        <div class="bs-track">
+          <div class="bs-cover bc-1"><span>The Quiet Fire</span></div>
+          <div class="bs-cover bc-2"><span>Sovereign Mind</span></div>
+          <div class="bs-cover bc-3"><span>Letters to No One</span></div>
+          <div class="bs-cover bc-4"><span>Build Different</span></div>
+          <div class="bs-cover bc-5"><span>The Salt and the Sea</span></div>
+          <div class="bs-cover bc-6"><span>Unfolding Grace</span></div>
+          <div class="bs-cover bc-7"><span>Legacy Code</span></div>
+          <div class="bs-cover bc-8"><span>Her Last Chapter</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section class="testimonials" id="testimonials">
+    <div class="testi-bg">
+      <div class="testi-orb t-o1"></div>
+      <div class="testi-orb t-o2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Author Voices</div>
+        <h2 class="section-title">1,200 Authors.<br/><em>One Mission.</em></h2>
+      </div>
+
+      <div class="testi-slider" id="testiSlider">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Inkbound didn't just publish my book — they transformed it. The editorial team caught things three other agencies missed, and the cover design was so stunning my publisher friends asked who did it."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar ta-1">MR</div>
+              <div>
+                <strong>Marcus Reed</strong>
+                <span>Author of <em>The Sovereign CEO</em> — #1 Amazon Bestseller</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"I came to Inkbound with a rough memoir and left with a New York Times–quality book. Their attention to my story — my actual voice — made every chapter feel authentically mine."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar ta-2">SA</div>
+              <div>
+                <strong>Sophia Allende</strong>
+                <span>Author of <em>When I Learned to Stay</em></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"The distribution reach is unreal. Within three weeks of launch my book was available in 38 countries. My marketing team said the Amazon optimization alone doubled our pre-orders."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar ta-3">DK</div>
+              <div>
+                <strong>Daniel Kim</strong>
+                <span>Author of <em>Scale the Impossible</em></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"What I loved most was that they treated my children's book with the same seriousness as a business book. The illustrations coordination, the font choices — perfection. My daughter cried happy tears."</blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar ta-4">LW</div>
+              <div>
+                <strong>Lydia Weiss</strong>
+                <span>Author of <em>Clouds That Listen</em></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots">
+        <button class="tdot active" data-idx="0"></button>
+        <button class="tdot" data-idx="1"></button>
+        <button class="tdot" data-idx="2"></button>
+        <button class="tdot" data-idx="3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA BAND ═══ -->
+  <section class="cta-band">
+    <div class="cta-bg">
+      <div class="cta-glow"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <div class="cta-badge">Limited Slots Available</div>
+        <h2 class="cta-title">Your Manuscript Is<br/><em>Ready to Change Lives.</em></h2>
+        <p>We accept a limited number of projects each month to ensure every author receives our full attention. Don't let your story wait another year.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary btn-large">
+            <span>Book a Free Consultation</span>
+            <div class="btn-shine"></div>
+          </a>
+          <div class="cta-trust">
+            <span>🔒 100% Confidential</span>
+            <span>⚡ Response in 24 hrs</span>
+            <span>✦ No Obligation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-eyebrow">Get in Touch</div>
+          <h2 class="section-title">Let's Start Your<br/><em>Publishing Story</em></h2>
+          <p>Fill out the form and a publishing consultant will reach out within 24 hours with a personalized plan for your book.</p>
+
+          <div class="contact-details">
+            <div class="cd-item">
+              <div class="cd-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9 6 9-6M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+              </div>
+              <div>
+                <strong>Email Us</strong>
+                <a href="mailto:hello@inkboundpublishing.com">hello@inkboundpublishing.com</a>
+              </div>
+            </div>
+            <div class="cd-item">
+              <div class="cd-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Call Us</strong>
+                <a href="tel:+18004652683">+1 (800) 465-2683</a>
+              </div>
+            </div>
+            <div class="cd-item">
+              <div class="cd-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Visit Us</strong>
+                <span>350 Fifth Avenue, New York, NY 10118</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="genre">Book Genre</label>
+              <select id="genre" name="genre">
+                <option value="">Select your genre</option>
+                <option>Business & Leadership</option>
+                <option>Memoir & Biography</option>
+                <option>Self-Help & Wellness</option>
+                <option>Fiction & Thriller</option>
+                <option>Spiritual & Faith</option>
+                <option>Children's Book</option>
+                <option>Academic</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Book</label>
+              <textarea id="message" name="message" rows="4" placeholder="Share a brief description of your manuscript and what you're hoping to achieve..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <span>Send My Message</span>
+              <div class="btn-shine"></div>
+            </button>
+            <p class="form-disclaimer">By submitting, you agree to our Privacy Policy. We never share your information.</p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✦</div>
+            <h3>Message Received!</h3>
+            <p>A publishing consultant will reach out to you within 24 hours. Keep an eye on your inbox!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <span class="logo-mark">✦</span>
+            <span class="logo-text">INKBOUND</span>
+          </a>
+          <p>Where extraordinary stories find their forever readers. Full-service book publishing with global reach.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Manuscript Editing</a></li>
+            <li><a href="#">Cover Design</a></li>
+            <li><a href="#">Book Formatting</a></li>
+            <li><a href="#">Global Distribution</a></li>
+            <li><a href="#">Audiobook Production</a></li>
+            <li><a href="#">PR & Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Inkbound Publishing LLC. All rights reserved.</p>
+        <p>Designed to move books. Built to build legacies.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
